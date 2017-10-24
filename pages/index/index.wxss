@@ -1,0 +1,47 @@
+
+@import "../component/home-item.wxss";
+/**index.wxss**/
+swiper{
+  height: 250px;
+}
+.scroll-view{
+  display: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.content-tabBar{
+   display: flex;
+   justify-content: space-around;
+   border-bottom:solid 1px #f6f6f6;
+   flex-wrap: wrap;
+   background: white;
+   padding-top: 10rpx;
+   
+}
+.content-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 150rpx;
+}
+.content-box-icon{
+  width: 88rpx;
+  height: 88rpx;
+  margin-top: 10rpx;
+}
+.content-box-name{
+  margin: 20rpx;
+  margin-top: 3rpx;
+  font-size: 20rpx;
+}
+
+.content-item{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+

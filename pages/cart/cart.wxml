@@ -1,0 +1,26 @@
+<import src="../component/cart-item.wxml"/>
+<view>
+  <checkbox-group bindchange="checkboxChange">
+    <view class='content-item'>
+      <block wx:for="{{goodsList}}">
+          <template is="cart-item" data="{{...item}}"/>
+      </block>
+    </view>
+  </checkbox-group>
+
+  <view class='cart-foot'>
+    <view class='cart-foot-left-box'>
+      <checkbox-group bindchange="checkboxChangeAll">
+          <checkbox class='cart-foot-all-check' checked='{{chooseAll}}'></checkbox>
+      </checkbox-group>
+      <view class="cart-foot-content-box">
+          <text class="cart-foot-total-prices">合计：￥{{orderform.totalAmount}}</text>
+          <text class="cart-foot-freight">不含运费</text>
+      </view>
+    </view>
+    <view class='btn-cart-foot-box' bindtap='goSettlement'>
+        <text class="btn-cart-foot-title">结算</text>
+    </view>
+  </view>
+
+</view>

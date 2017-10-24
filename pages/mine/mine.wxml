@@ -1,0 +1,48 @@
+<!--pages/mine/mine.wxml-->
+
+<view class='mine-container'>
+  <view class='head'>
+      <block wx:if="{{hasUserInfo}}">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+  </view>
+  <view class='content'>
+      <view class='content-title'>
+            <text>我的订单</text> 
+              <navigator  url="../order-list/order-list">
+                 <text class='content-title-right'>查看全部订单 ></text>
+              </navigator>
+      </view>
+      <view class='content-tabBar'>
+                  <block wx:for="{{orderIconList}}">
+                       <navigator class='content-box'  url="../order-list/order-list?type={{item.type}}">
+                            <image class="content-box-icon" src="{{item.icon}}" background-size="cover"></image>
+                            <text class="content-box-name">{{item.name}}</text>
+                       </navigator>
+
+                  </block>
+      </view>
+  </view>
+      <view class='foot-column' bindtap='goToCart'>
+            <text>购物车</text> 
+      </view>
+  <navigator  url="../order-list/order-list">
+      <view class='foot-column'>
+            <text>我的优惠券</text> 
+            <text class='content-title-right'>></text>
+      </view>
+  </navigator>
+  <navigator  url="../order-list/order-list">
+      <view class='foot-column'>
+            <text>我的优惠码</text> 
+            <text class='content-title-right'>></text>
+      </view>
+  </navigator>
+  <navigator  url="../order-list/order-list">
+      <view class='foot-column'>
+            <text>联系客服</text> 
+            <text class='content-title-right'>></text>
+      </view>
+  </navigator>
+</view>

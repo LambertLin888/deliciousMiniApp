@@ -1,0 +1,8 @@
+<template name="home-item">
+  <navigator class='.home-item-box' url="../detail/detail?id={{id}}" hover-class="navigator-hover">
+        <image class="home-item-img" src="{{pic}}" mode="aspectFill"></image>
+        <text class='home-item-name'>{{name}}</text>
+        <text class='home-item-price'>￥{{price}}</text>
+        <text class='home-item-discount-price'>￥{{discount_price}}</text>
+  </navigator>
+</template>

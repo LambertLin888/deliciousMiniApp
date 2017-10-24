@@ -1,0 +1,18 @@
+<template name="cart-item">
+  <view class='cart-item-box'>
+        <view>
+          <checkbox class='cart-item-check' value="{{id}}" checked="{{checked}}"/>
+        </view>
+        <image class="cart-item-img" src="{{pic}}" mode="aspectFill"></image>
+        <view class='cart-item-content-box'>
+          <text class='cart-item-name'>{{name}}</text>
+          <view class='cart-item-sub-content-box'>
+            <view>
+                <text class='cart-item-price'>￥{{price}}</text>
+                <text class='cart-item-discount-price'>￥{{discount_price}}</text>
+            </view>
+            <text class='cart-item-num'>X1</text>
+          </view>
+        </view>
+  </view>
+</template>

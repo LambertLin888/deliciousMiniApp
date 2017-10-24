@@ -1,0 +1,54 @@
+@import "../component/cart-item.wxss";
+.cart-foot{
+   bottom: 0px;
+   left: 0px;
+   position: fixed;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   background: white;
+   width: 100%;
+   height: 85rpx;
+   align-items: center;
+}
+.cart-foot-left-box{
+  display: flex;
+  justify-content: space-between; 
+   align-items: center; 
+  flex-grow: 1;
+  height: 85rpx;
+  border-top: 1px solid #f6f6f6;
+}
+.cart-foot-all-check{
+   margin-left: 20rpx;
+}
+.cart-foot-content-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  align-items: flex-end;
+  padding-right: 25rpx;
+
+
+}
+.cart-foot-total-prices{
+   font-size: 25rpx;
+   color: #57b531;
+}
+.cart-foot-freight{
+   font-size: 20rpx;
+   color: #999;
+}
+
+.btn-cart-foot-box{
+  display: flex;
+  justify-content: center;
+   align-items: center; 
+  background: #57b531;
+  height: 85rpx;
+  width: 210rpx;
+}
+.btn-cart-foot-title{
+   color: white;
+   font-size: 30rpx;
+}

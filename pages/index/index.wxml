@@ -1,0 +1,29 @@
+<import src="../component/home-item.wxml"/>
+  <view class='scroll-view-box'>
+    <scroll-view scroll-y class='scroll-view' style="height:{{screenHeight}}px" enable-back-to-top="true" bindscrolltolower="lower" >
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item.pic}}" class="slide-image" mode="aspectFill" bindtap="goDetail" data-id="{{item.id}}" width="355" height="250"/>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class='content-tabBar'>
+                  <block wx:for="{{secondLevellist}}">
+                       <view  class='content-box'  bindtap='goRootType'>
+                            <image class="content-box-icon" src="{{item.icon}}" mode="aspectFill" background-size="cover"></image>
+                            <text class="content-box-name">{{item.name}}</text>
+                       </view>
+                  </block>
+      </view>
+      <view class='content-item'>
+        <block wx:for="{{goodsList}}">
+            <template is="home-item" data="{{...item}}"/>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+ 
+
+

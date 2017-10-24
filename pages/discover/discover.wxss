@@ -1,0 +1,20 @@
+/* pages/discover/discover.wxss */
+@import "../component/home-item.wxss";
+#myVideo{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.scroll-view{
+  position: fixed;
+  top: 470rpx;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.content-item{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}

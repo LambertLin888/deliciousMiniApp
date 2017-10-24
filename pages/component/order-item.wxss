@@ -1,0 +1,80 @@
+.order-item-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 17rpx 0rpx;
+  background: #fff;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+  width: 100%;
+}
+.order-item-head-box{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  width: 100% ;
+}
+.order-item-head-detail-box{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 20rpx;
+  
+}
+.order-item-shop-name{
+  font-size: 25rpx;
+}
+.order-item-order-sn{
+  font-size: 21rpx;
+  color: #999;
+}
+.order-item-mark{
+  font-size: 25rpx;
+  color: #5cb531;
+  margin-right: 20rpx;
+}
+.order-item-inner-box{
+  display: flex;
+  align-items: center;
+  background: #fdfdfd;
+  padding: 10rpx 0rpx;
+  width: 100%;
+}
+.order-item-img{
+  height: 180rpx;
+  width: 180rpx;
+  margin-left: 20rpx;
+}
+.order-item-content-box{
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+    justify-content: space-around; 
+  /* align-items: center; */
+  flex-grow: 1;
+  height: 180rpx;
+}
+.order-item-sub-content-box{
+  display: flex;
+  padding-right: 20rpx;
+  justify-content: space-between; 
+  align-items:center;
+}
+.order-item-name{
+  font-size: 25rpx;
+}
+.order-item-price{
+  color: #ff0000;
+  font-size: 20rpx;
+}
+.order-item-discount-price{
+  color: #999;
+  text-decoration:line-through;
+  font-size: 20rpx;
+  padding-left: 10rpx;
+}
+.order-item-num{
+  color: #999;
+  font-size: 20rpx;
+  padding-left: 10rpx;
+}
